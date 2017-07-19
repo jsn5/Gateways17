@@ -1,0 +1,59 @@
+
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.gateLogo{
+	background-image: url('../../assets/img/gate-logo.png');
+	background-size: 180px 180px;	
+	width:180px;
+	height:180px;
+	top:20px;
+	left:20px;
+	position:absolute;
+}
+
+
+.christCoin{
+	left:0;
+	right:0;
+	top: 30%;
+	width:301px;
+	height:301px;
+	text-align: center;
+	margin:0 auto;
+	background-image: url('../../assets/img/christ_coin.png');
+	position: absolute;
+}
+
+.christLogo{
+	background-image: url('../../assets/img/christ-logo.png');
+	background-size: 266px 107px;	
+	width:266px;
+	height:107px;
+	right:100px;
+	top:20px;
+	position: absolute;
+}
+.tag{
+	width:100%;
+	left:0;
+	right:0;
+	font-family: spincycle;
+	position:absolute;
+	top:65%;
+	margin:0 auto;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+.tag h1{
+	font-size:5em;
+
+}
+.tag p{
+	font-size:2em;
+}
