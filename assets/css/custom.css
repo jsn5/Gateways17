@@ -52,8 +52,30 @@ body, html {
 
 .tag h1{
 	font-size:5em;
-
+	font-family: firebomb;
+}
+.tag h1 small{
+	font-size:1.2em;
+	color:#fff;
+	font-family: spincycle;
 }
 .tag p{
 	font-size:2em;
+}
+
+#desc p{
+	font-size:1.2em;
+}
+
+.name-desc > h2{
+	font-family: spincycle;
+}
+
+#addr>h1{
+	color:#f0f0f0;
+	text-decoration: underline;
+}
+
+#addr>p{
+	font-family: arial;
 }

@@ -3,3 +3,15 @@
   src:url('../fonts/spin.ttf');
   font-weight: bold;
 }
+@font-face {
+  font-family: legend;
+  src:url('../fonts/legend.ttf');
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: firebomb;
+  src:url('../fonts/DigitalFirebomb.ttf');
+  font-weight: bold;
+}

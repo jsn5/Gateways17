@@ -1,4 +1,4 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>
@@ -7,16 +7,25 @@
 	<link href="assets/css/custom.css" rel="stylesheet"/>
 	<link href="assets/css/style.css" rel="stylesheet"/>
 	 <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/font-spin.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
     <link href="assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
     <script src="assets/js/particles.min.js"></script>
 	<script src="assets/js/app.js"></script>
+	
+     <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+       body{
+       	font-family: legend,arial;
+       }
+    </style>
 </head>
 <body onload="rotateYDIV()">
-
+<section id="home" name="home"></section>
 <div class="gateLogo"></div>
 <!-- Menu -->
 	<nav class="menu" id="theMenu">
@@ -25,13 +34,12 @@
 			<i class="fa fa-times menu-close"></i>
 			<a href="#home" class="smoothScroll">Home</a>
 			<a href="#about" class="smoothScroll">About</a>
-			<a href="#portfolio" class="smoothScroll">Events</a>
-			<a href="#services" class="smoothScroll">Schedule</a>
-			<a href="#contact" class="smoothScroll">Contact</a>
-			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#events" class="smoothScroll">Events</a>
+			<a href="#venue" class="smoothScroll">Venue</a>
+		<!--	<a href="#"><i class="fa fa-facebook"></i></a>
 			<a href="#"><i class="fa fa-twitter"></i></a>
 			<a href="#"><i class="fa fa-dribbble"></i></a>
-			<a href="#"><i class="fa fa-envelope"></i></a>
+			<a href="#"><i class="fa fa-envelope"></i></a>-->
 		</div>
 
 		
@@ -39,69 +47,248 @@
 		<!-- Menu button -->
 		<div id="menuToggle"><i class="fa fa-bars"></i></div>
 	</nav>
+
+	<div id="rotate3D" class="christCoin" style="transform: rotateY(260deg);"></div>
 <div class="christLogo"></div>
 <div class="tag">
-	<h1>GATEWAYS 2017</h1>
+	<h1>GATEWAYS <small>2017</small></h1>
 	<p>6TH &amp; 7TH SEPTEMBER</p>
+	<p style="font-family: verdana;">(Registration starts soon)</p>
 </div>
-<div id="rotate3D"  class="christCoin"></div>
-<!--<h1>Gateways '17</h1>-->
-<!--<canvas width="100%" height="300px">
-</canvas>-->
 <div id="particles-js" style="background-color:#000;height:100%;"></div>
 
 
-	
-	<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 mt">
+		<section id="about" name="about"></section>
+	<div id="aboutwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 name">
+					<img class="img-responsive" src="assets/img/gate-logo-black.png">
+				</div><!--/col-lg-4-->
+				<div class="col-lg-8 name-desc" >
+					<h2 style="font-family: legend">OVERVIEW</h2>
+					<div class="name-zig"></div>
 					
-						    <div class="item active mb centered">
-						      <h2>OVERVIEW</h2>
-						      <div class="name-zig" style="margin:0 auto; padding-bottom: 50px;"></div>
-						      <p>Gateways is the national level inter-collegiate post graduate IT fest organized by the Department of Computer Science, Christ University. It provides the much needed exposure which is a prerequisite to survive in the IT industry. Participants compete in numerous technical and non-technical events that are both entertaining and intellectually challenging.</p>
+					<div class="col-md-6" id="desc">
+						<p>Gateways is the national level inter-collegiate post graduate IT fest organized by the Department of Computer Science, Christ University. It provides the much needed exposure which is a prerequisite to survive in the IT industry. Participants compete in numerous technical and non-technical events that are both entertaining and intellectually challenging.</p>
 
-							  <p>We are proud to present the 21st version of Gateways, with which we continue our tradition to benefit the students in staying abreast with latest trends in technology and developing their organisational and soft skills.</p>
-						    </div>
-						  
-					</div><!--/col-lg-8 -->
-				</div><!--/row -->
-			</div><!--/container -->
+							  
+					</div>
+					<div class="col-md-6" id="desc">
+						<p>We are proud to present the 21st version of Gateways, with which we continue our tradition to benefit the students in staying abreast with latest trends in technology and developing their organisational and soft skills.</p>
+					</div>
+					
+				</div><! --/col-lg-8-->
+		
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /aboutwrap -->
+
+	<! -- ABOUT SEPARATOR -->
+	<div class="sep about" data-stellar-background-ratio="0.5"></div>
+	
+	<! -- EVENTS SECTION -->
+	<section id="events" name="events"></section>
+	<div id="portfoliowrap" style="background:url('assets/img/event_bg.png');">
+		<div class="container">
+			<div class="row">
+				<h1 style="color:#fff;">EVENTS</h1>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event1.png"><img class="img-responsive" src="assets/img/events/Event1.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event2.png"><img class="img-responsive" src="assets/img/events/Event2.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event3.png"><img class="img-responsive" src="assets/img/events/Event3.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+			</div><!-- /row -->
+	
+			<div class="row mt">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event4.png"><img class="img-responsive" src="assets/img/events/Event4.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event5.png"><img class="img-responsive" src="assets/img/events/Event5.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event6.png"><img class="img-responsive" src="assets/img/events/Event6.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+			</div><!-- /row -->
+
+			<div class="row mt">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event7.png"><img class="img-responsive" src="assets/img/events/Event7.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event8.png"><img class="img-responsive" src="assets/img/events/Event8.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event9.png"><img class="img-responsive" src="assets/img/events/Event9.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+			</div><!-- /row -->
+			<div class="row mt">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event10.png"><img class="img-responsive" src="assets/img/events/Event10.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event11.png"><img class="img-responsive" src="assets/img/events/Event11.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+					<div class="project-wrapper">
+	                    <div class="project">
+	                        <div class="photo-wrapper">
+	                            <div class="photo">
+	                            	<a class="fancybox" href="assets/img/events/Event12.png"><img class="img-responsive" src="assets/img/events/Event12.png" alt=""></a>
+	                            </div>
+	                            <div class="overlay"></div>
+	                        </div>
+	                    </div>
+	                </div>
+				</div><!-- col-lg-4 -->
+			</div><!-- /row -->
+			<br/>
+		</div><! --/container -->
+	</div><! --/Portfoliowrap -->
+
+
+<section id="venue" name="venue"></section>	
 <div class="sep contact" data-stellar-background-ratio="0.5"></div>
 	<div id="contactwrap">
 		<div class="container">
+		<br/>
 			<div class="row">
-				<div class="col-lg-6">
-					<p>VENUE</p>
+			
+				<div class="col-lg-6" style="font-size:1.4em;" id="addr" >
+					<h1>Address</h1>
 					<p>Christ University</p>
 					<p>
-						<small>Hosur Road,<br/>
+						Hosur Road,<br/>
 						Bengaluru - 560029,<br/>
 						Karnataka, India
-					</small>
+						
 					</p>
-	
-			
+					<h1>EMAIL</h1>
+					<p>gateways@cs.christuniversity.in</p>
+					
 				</div>
 				
-				<div class="col-lg-6">
-					<form role="form">
-					  <div class="form-group">
-					    <label for="exampleInputName1">Your Name</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
-					    <label for="exampleInputEmail1">Email address</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-					    <label for="exampleInputText1">Message</label>
-					    <textarea class="form-control" rows="3"></textarea>
-					  </div>
-					  <button type="submit" class="btn btn-default">Submit</button>
-					</form>
+				<div class="col-lg-6" id="addr">
+				<h1>VENUE</h1>
+					<div id="map"></div>
+					
 				</div>
 			
 			</div><!--/row -->
 		</div><!--/container -->
 	</div>
-<script src="assets/js/animation.js"></script>
  <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -173,8 +360,24 @@
 		rotateYDIV()
 		}
 		//-->
-</script>
 	
+</script>
+<script>
+      function initMap() {
+        var uluru = {lat: 12.934551, lng: 77.606075};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+      <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU1BqU31O3E1AE0LxnFnXUwuG-5C1QYTM&callback=initMap">
+    </script>
 </body>
 </html>
 
