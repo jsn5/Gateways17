@@ -6,6 +6,7 @@
 	</title>
 	<link href="assets/css/custom.css" rel="stylesheet"/>
 	<link href="assets/css/style.css" rel="stylesheet"/>
+	<link href="assets/css/ribbon.css" rel="stylesheet"/>
 	 <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -23,11 +24,14 @@
        body{
        	font-family: legend,arial;
        }
-
+       .fancybox-iframe {
+       	height:700px;
+       }
  
     </style>
 </head>
 <body onload="rotateYDIV()">
+<div class="corner-ribbon bottom-right sticky orange shadow">Prizes worth Rs. 1,50,000-</div>
 <section id="home" name="home"></section>
 <div class="gateLogo"></div>
 <!-- Menu -->
@@ -37,12 +41,13 @@
 			<i class="fa fa-times menu-close"></i>
 			<a href="#home" class="smoothScroll">Home</a>
 			<a href="#about" class="smoothScroll">About</a>
+			<a href="#rules" class="smoothScroll">Rules</a>
 			<a href="#events" class="smoothScroll">Events</a>
 			<a href="#contact" class="smoothScroll">Contact</a>
-		<!--	<a href="#"><i class="fa fa-facebook"></i></a>
-			<a href="#"><i class="fa fa-twitter"></i></a>
-			<a href="#"><i class="fa fa-dribbble"></i></a>
-			<a href="#"><i class="fa fa-envelope"></i></a>-->
+			<a href="https://www.facebook.com/gateways2017/"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/gateways2017"><i class="fa fa-twitter"></i></a>
+			<a href="https://instagram.com/gateways2017"><i class="fa fa-instagram"></i></a>
+			
 		</div>
 
 		
@@ -50,15 +55,15 @@
 		<!-- Menu button -->
 		<div id="menuToggle"><i class="fa fa-bars"></i></div>
 	</nav>
-
 	<div id="rotate3D" class="christCoin" style="transform: rotateY(260deg);"></div>
-<div class="christLogo"></div>
-<div class="tag">
-	<h1>GATEWAYS <small>2017</small></h1>
-	<p>6TH &amp; 7TH SEPTEMBER</p>
-	<p style="font-family: verdana;">(Registration starts soon)</p>
-</div>
-<div id="particles-js" style="background-color:#000;height:100%;"></div>
+	<div class="christLogo"></div>
+	<div class="tag">
+		<h1>GATEWAYS <small>2017</small></h1>
+		<p>6TH &amp; 7TH SEPTEMBER</p>
+		<p style="font-family: arial;"><a href="https://www.thecollegefever.com/events/gateways-2017-Etq2DZM0bB" target="_blank" class="btn btn-large btn-info active" style="font-size:1em;">REGISTER</a></p>
+	</div>
+	<div id="particles-js" style="background-color:#000;height:100%;"></div>
+
 
 
 		<section id="about" name="about"></section>
@@ -87,6 +92,29 @@
 		</div><!-- /container -->
 	</div><!-- /aboutwrap -->
 
+<section id="rules" name="rules"></section>		
+	<div id="ruleswrap" style="width:100%;background-color: #b2c7e8;">
+		<div class="container">
+			<div class="row" >
+			<h1>GENERAL INSTRUCTIONS</h1>
+			<div class="grules" style="font-size:20px;padding-top:50px;font-family:arial;font-weight: bold;">
+			<ul>
+			<li>Maximum of 15 participants per college.</li>
+			<li>Participants are required to carry their college ID cards.</li>
+			<li>All equipments like laptops, pen drives and cameras required for their events have to be carried by the participants.</li>
+			<li>Registration fee for each participant is Rs. 100, which is inclusive of all events and is non-refundable.</li>
+			<li>Registrations can be done on the spot or online.</li>
+			<li>Online registrations should be done before the 4th of September 2017.</li>
+			<li>Colleges registering online will get a 10% discount.</li>
+			<li>Outstation students should inform the fest organizers regarding their accommodation before the 4th of September 2017.</li>
+			<li>Participants must report at the venue 15 mins prior to the start of the event.</li>
+			</ul>
+			<p style="font-family: verdana;">&nbsp;<a href="assets/rules.docx" target="_blank" class="btn btn-primary btn-lg active" style="font-size:1em;">Download Event Rules</a></p>
+
+			</div>
+			</div>
+		</div>
+	</div>
 	<! -- ABOUT SEPARATOR -->
 	<div class="sep about" data-stellar-background-ratio="0.5"></div>
 	
@@ -101,7 +129,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event1.png"><img class="img-responsive" src="assets/img/events/Event1.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event1.html"><img class="img-responsive" src="assets/img/events/Event1.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -114,7 +142,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event2.png"><img class="img-responsive" src="assets/img/events/Event2.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event2.html"><img class="img-responsive" src="assets/img/events/Event2.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -127,7 +155,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event3.png"><img class="img-responsive" src="assets/img/events/Event3.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event3.html"><img class="img-responsive" src="assets/img/events/Event3.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -142,7 +170,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event4.png"><img class="img-responsive" src="assets/img/events/Event4.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event4.html"><img class="img-responsive" src="assets/img/events/Event4.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -155,7 +183,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event5.png"><img class="img-responsive" src="assets/img/events/Event5.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event5.html"><img class="img-responsive" src="assets/img/events/Event5.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -168,7 +196,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event6.png"><img class="img-responsive" src="assets/img/events/Event6.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event6.html"><img class="img-responsive" src="assets/img/events/Event6.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -183,7 +211,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event7.png"><img class="img-responsive" src="assets/img/events/Event7.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event7.html"><img class="img-responsive" src="assets/img/events/Event7.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -196,7 +224,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event8.png"><img class="img-responsive" src="assets/img/events/Event8.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event8.html"><img class="img-responsive" src="assets/img/events/Event8.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -209,7 +237,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event9.png"><img class="img-responsive" src="assets/img/events/Event9.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event9.html"><img class="img-responsive" src="assets/img/events/Event9.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -223,7 +251,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event10.png"><img class="img-responsive" src="assets/img/events/Event10.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event10.html"><img class="img-responsive" src="assets/img/events/Event10.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -236,7 +264,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event11.png"><img class="img-responsive" src="assets/img/events/Event11.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event11.html"><img class="img-responsive" src="assets/img/events/Event11.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -249,7 +277,7 @@
 	                    <div class="project">
 	                        <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event12.png"><img class="img-responsive" src="assets/img/events/Event12.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event12.html"><img class="img-responsive" src="assets/img/events/Event12.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -264,7 +292,7 @@
 			<div class="col-sm-6">
 					 <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event13.png"><img class="img-responsive" src="assets/img/events/Event13.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event14.html"><img class="img-responsive" src="assets/img/events/Event13.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -272,7 +300,7 @@
 			<div class="col-sm-6">
 				 <div class="photo-wrapper">
 	                            <div class="photo">
-	                            	<a class="fancybox" href="assets/img/events/Event14.png"><img class="img-responsive" src="assets/img/events/Event14.png" alt=""></a>
+	                            	<a class="fancybox" data-fancybox-type="iframe" href="event13.html"><img class="img-responsive" src="assets/img/events/Event14.png" alt=""></a>
 	                            </div>
 	                            <div class="overlay"></div>
 	                        </div>
@@ -295,13 +323,21 @@
 					<p>
 						Hosur Road,<br/>
 						Bengaluru - 560029,<br/>
-						Karnataka, India
+						Karnataka, India.
 						
 					</p>
 					<h1>CONTACT</h1>
 					<p>gateways@cs.christuniversity.in</p>
-					<p><b>Ranjan</b> +91 8861338676<br/><b>Girish</b> +91 9738094917</p>
-					
+					<p> <b>Ranjan</b> +91 8861338676<br/>
+						<b>Leela</b> +91 9742191846<br/>
+					    <b>Girish</b> +91 9738094917</br>
+						<b>Kavya</b> +91 9600909303</br>
+					</p>
+					<p>
+					<a href="https://www.facebook.com/gateways2017/"><i class="fa fa-2x fa-facebook"></i></a>&nbsp;
+					<a href="https://twitter.com/gateways2017"><i class="fa fa-2x fa-twitter"></i></a>&nbsp;
+					<a href="https://instagram.com/gateways2017"><i class="fa fa-2x fa-instagram"></i></a>
+					</p>
 				</div>
 				
 				<div class="col-lg-6" id="addr">

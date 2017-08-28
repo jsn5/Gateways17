@@ -20,13 +20,25 @@ body, html {
 .christCoin{
 	left:0;
 	right:0;
-	top: 20%;
+	top: 10%;
 	width:500px;
 	height:500px;
 	text-align: center;
 	margin:0 auto;
 	background-image: url('../../assets/img/christ_coin.png');
 	position: absolute;
+}
+
+.ribbon{
+	background-image: url('../../assets/img/prizes.png');
+	left:0;
+	right:0;
+	margin-left:70%;
+	margin-top:15%;
+	top:200px;
+	width:500px;
+	height:450px;
+	position:absolute;
 }
 
 .christLogo{
