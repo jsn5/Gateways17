@@ -108,3 +108,9 @@ body, html {
 			height:300px;
 	    }
 	}
+
+.mozilla{
+	background-image: url('../../assets/img/mozilla-logo.png');
+	height:100px;
+	width:50px;
+}
